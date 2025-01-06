@@ -1,0 +1,1 @@
+pandoc -s -o ehandmade/game_portfolio.html ehandmade/game_portfolio.md
