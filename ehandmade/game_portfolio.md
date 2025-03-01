@@ -69,9 +69,12 @@
 ## Scramble Blaze
 
 [リポジトリ](https://github.com/nasttymain/nassty3d)
+[参考動画](https://x.com/ethllc4/status/1663917894420295685)
 
 * 作成時期: 2023年春
 * ジャンル: 3Dシューティング
 * 使用言語: Hot Soup Processor
 * 使用グラフィックAPI: HSP標準命令(GDI)
 * 概要: 頂点計算・隠面消去を自力実装し、2D三角形描画命令のみで3D描画を行い作成したシューティングゲーム。
+
+執筆中
