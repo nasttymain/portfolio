@@ -205,7 +205,7 @@
 <ul>
 <li>作成時期: 2018年夏</li>
 <li>ジャンル: 2D固定画面アクション</li>
-<li>使用言語: Hot Soup Processor</li>
+<li>使用言語: Hot Soup Processor 3</li>
 <li>使用グラフィックAPI: HSP標準命令(GDI)</li>
 <li>概要:
 画面上をクリックするとそこから水紋のような円が発生し、時間とともに、色相が変化しながら広がっていく。色様々な正方形が降ってくるので、円の周を、色が正方形と一致するときに正方形に触れさせられたら、得点となる。<img
@@ -223,7 +223,7 @@ src="pastel.png" title="Pastel" alt="Pastel" /></li>
 <ul>
 <li>作成時期: 2021年冬～2022年春</li>
 <li>ジャンル: 2D固定画面アクション</li>
-<li>使用言語: Hot Soup Processor</li>
+<li>使用言語: Hot Soup Processor 3</li>
 <li>使用グラフィックAPI: Artlet2D(HSP用GDI+ライブラリ)</li>
 <li>概要:
 上から落ちてくるフルーツをキャッチするゲームだが、持っている籠を投げ上げてフルーツをその中に入れ、フルーツ入りの籠をキャッチするというゲーム。<img
@@ -247,7 +247,7 @@ alt="連続投げ上げ時" />
 <ul>
 <li><p>作成時期: 2022年春</p></li>
 <li><p>ジャンル: 2D縦スクロールシューティング</p></li>
-<li><p>使用言語: Hot Soup Processor</p></li>
+<li><p>使用言語: Hot Soup Processor 3</p></li>
 <li><p>使用グラフィックAPI: HSP標準命令(GDI)</p></li>
 <li><p>概要:
 宇宙をテーマとした縦スクロールシューティングゲーム。スコアアタック、ワンプレイ制限時間つき、「1パターンの敵が画面外に出るか、全て倒すと次のパターンの敵が出てくる」という、キャラバンシューティング形式を採った。</p></li>
@@ -267,6 +267,8 @@ Boy Drum Kitから作成してミックスした。
 <li><p>受賞: なし</p></li>
 </ul>
 <h2 id="logically">Logically</h2>
+<p><a
+href="https://soundcloud.com/thirsty-three/sets/logically-ost">ゲーム内BGM</a></p>
 <ul>
 <li>作成時期: 2022年秋</li>
 <li>ジャンル: パズル</li>
@@ -280,13 +282,24 @@ Boy Drum Kitから作成してミックスした。
 <p><a href="https://github.com/nasttymain/nassty3d">リポジトリ</a> <a
 href="https://x.com/ethllc4/status/1663917894420295685">参考動画</a></p>
 <ul>
-<li>作成時期: 2023年春</li>
-<li>ジャンル: 3Dシューティング</li>
-<li>使用言語: Hot Soup Processor</li>
-<li>使用グラフィックAPI: HSP標準命令(GDI)</li>
-<li>概要:
-頂点計算・隠面消去を自力実装し、2D三角形描画命令のみで3D描画を行い作成したシューティングゲーム。</li>
+<li><p>作成時期: 2023年春</p></li>
+<li><p>ジャンル: 3Dシューティング</p></li>
+<li><p>使用言語: Hot Soup Processor 3</p></li>
+<li><p>使用グラフィックAPI: HSP標準命令(GDI)</p></li>
+<li><p>概要:
+頂点計算・隠面消去・ラスタライズのライブラリを自力実装し、2D三角形描画命令のみで3D描画を行い作成したシューティングゲーム。</p></li>
+<li><p>工夫点:
+このゲームは、自力で3Dのラスタライズを実装し、3D描画に関する理解を深めてみようと思って作成した。
+最初はワイヤーフレームで作成し、そのあと単色ポリゴンを描画できるようにした。ポリゴンの順序決定にはZソート法を用いた。(この点で最も苦労したのは、カメラの背面や至近の物体を描画対象から外すアルゴリズムだった。カメラの真横に物体が来たときや、カメラの眼の前に物体が来たときに、1枚の大きなポリゴン(異常なラスタライズがなされている)で画面が覆われてしまうのを改善するのに時間がかかった。)</p>
+<figure>
+<img src="3d_demo.gif" alt="3D描画デモ" />
+<figcaption aria-hidden="true">3D描画デモ</figcaption>
+</figure>
+<p>また、一通り3D描画の仕組みが整ったのち、そのライブラリ向け3Dモデルを製作するツールも作成した。参考動画にある宇宙船(自キャラ)もこのツールで作成した。</p>
+<figure>
+<img src="modeltool.png" alt="3Dモデル作成ツール" />
+<figcaption aria-hidden="true">3Dモデル作成ツール</figcaption>
+</figure></li>
 </ul>
-<p>執筆中</p>
 </body>
 </html>
