@@ -1,12 +1,248 @@
 <!DOCTYPE html>
+<html lang="ja">
 
-<html>
-    <head>
-        nasTTY's Portfolios
-    </head>
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>ポートフォリオ of nastty</title>
+    <link rel="stylesheet" href="style.css" media="screen">
+</head>
+
 <body>
-<h1>nastty's Portfolios</h1>
-<p><a href="ehandmade/game_portfolio.html">Handmade Games</a></p>
-<p>is not fully made yet</p>
+    <header>
+        <div>nastty ポートフォリオ (TOP)</div>
+    </header>
+    <main>
+        <h1>ポートフォリオ</h1>
+        <aside>
+            本サイトは執筆途中です。コンテンツは不完全ですし、スタイルシートが未完成の要素もあります。
+        </aside>
+        <article id="profile">
+            <h2>プロフィール</h2>
+            <ul>
+                <li>大阪公立大学院 情報学研究科 基幹情報学専攻 1年生</li>
+                <li>
+                    プログラミング歴: 15年
+                    <ul>
+                        <li>Hot Soup Processor 3 : 14年</li>
+                        <li>C/C++ : 9年</li>
+                        <li>Arduino: 8年</li>
+                        <li>HTML/CSS/Javascript: 8年</li>
+                        <li>Python : 6年</li>
+                        <li>PHP: 8年</li>
+                        <li>SystemVerilog: 4年</li>
+                        <li>PowerShell: 2年</li>
+                    </ul>
+                </li>
+                <li>
+                    その他の趣味:
+                    <ul>DTM (音楽生成・リミックス): 11年</ul>
+                    <ul>動画編集: 9年</ul>
+                </li>
+            </ul>
+            <section id="social">
+                <h3>発信</h3>
+                <div class="square-content">
+                    <a href="https://qiita.com/onemimo">
+                        <figure>
+                            <img src="qiita-icon.png" alt="">
+                            <figcaption>Qiita</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://zenn.dev/nasttym">
+                        <figure>
+                            <img src="zenn-icon.png" alt="">
+                            <figcaption>Zenn</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </section>
+
+        </article>
+        <article id="portfolio">
+            <h1>過去作品集</h1>
+            <aside>
+                注意: 過去に製作したゲームについては、<a href="ehandmade/game_portfolio.html">こちら</a>からご覧いただけます。
+            </aside>
+            <section id="template">
+                <h2>OS もどき「HSP Prompt OS」</h2>
+                <section>
+                    <h3>使用技術</h3>
+                    <ul>
+                        <li>Hot Soup Processor 3</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>製作期間</h3>
+                    2016年?～2018年?
+                </section>
+                <section>
+                    <h3>概要</h3>
+                    TBW
+                </section>
+                <section>
+                    <h3>技術構成図</h3>
+                </section>
+                <section>
+                    <h3>頑張ったこと</h3>
+                    <h4>1つめ</h4>
+                    TBW
+                </section>
+            </section>
+            <section id="programlecture">
+                <h2>自作プログラミング言語「mylang」 + 解説講座</h2>
+                <section>
+                    <h3>使用技術</h3>
+                </section>
+                <section>
+                    <h3>製作期間</h3>
+                    2021年～2022年
+                </section>
+                <section>
+                    <h3>概要</h3>
+                    TBW
+                </section>
+                <section>
+                    <h3>頑張ったこと</h3>
+                    <h4>1つめ</h4>
+                    TBW
+                </section>
+            </section>
+            <section id="dmxcont">
+                <h2>DMX 舞台照明制御システム</h2>
+                <section>
+                    <h3>使用技術</h3>
+                    <ul>
+                        <li>Arduino
+                            <ul>
+                                <li>C++</li>
+                            </ul>
+                        </li>
+                        <li>Python3
+                            <ul>
+                                <li>PySerial</li>
+                                <li>Pygame</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>製作期間</h3>
+                    2023年1月～2023年12月
+                </section>
+                <section>
+                    <h3>概要</h3>
+                    <p>
+                        私は、大学在学中に所属していた軽音楽部で、1年間照明係を担当しました。このとき、これまで当部が学内でライブを行う際に使用していた舞台照明のシステムを一部更新し、その表現力を高める/利便性の向上に成功しました。更新部分について、使用した電子回路の一部を自力で作成したほか、電子制御・フロントエンド双方のプログラムも一から作成しました。
+                    </p>
+                </section>
+                <section>
+                    <h3>技術構成図</h3>
+                    <figure>
+                        <img src="asd.png">
+                        <figcaption>「DMX 舞台照明制御システム(画像準備中)」</figcaption>
+                    </figure>
+                </section>
+                <section>
+                    <h3>頑張ったこと</h3>
+                    <h4>保守性・運用性の向上(ソフトウェア)</h4>
+                    <p>このシステムの作成にあたり、「自分の手を離れても運用・保守が容易に行える、という状況にする」ことを心がけました。</p>
+                    <p>なぜなら、本ソリューションにおける大きな懸念事項の1つに「1年後、自分は照明係を降りることになり(※照明係の任期は1年で、担当学年は固定)、作成したシステムは自分の手を離れて運用されることになる」ということがありました。<br>
+                        最初に作ったシステムは、1～2ヶ月程度で運用可能な状態にまで持っていくことができましたが、そのシステムは以下のような問題があり、このままの状態で次世代には引き継げないと判断しました:</p>
+                    <ol>
+                        <li>フロントエンドがHot Soup Processor 3という(あまりメジャーではない)言語で作成されており、後任がプログラムの読解・編集ができる可能性が低い。</li>
+                        <li>照明機材の数・構成・チャンネル配置がハードコーディングされており、運用性が低い。</li>
+                        <li>HSP3 は自動ビルド性が低い。手作業でのインストールとビルドをしなければならない。若しくは自動ビルドツールはアンチウイルスに誤って検疫されることが多く、自動ビルドには使えない。</li>
+
+                    </ol>
+                    <p>上記の問題を 対処/影響を軽減 するために、それぞれ以下のことを気をつけながら、改良版のアプリケーションを作成しました:</p>
+                    <ol>
+                        <li>フロントエンドは Python3 + Pygame で一から書き直した。Python であればクロスプラットフォーム性と後方互換性をある程度確保できるし、読み書きできる大学生も多い。</li>
+                        <li>機器の数・種類・チャンネル割当はすべて JSON ファイルに記述できるようにした。さらに。各照明機器に対してどのように振る舞うか/マイコンとどのように通信するか はフロントエンドとは独立した Python コードにし、実行時に動的 import できるようにすることで、機器構成の変更に対応しやすくした。実際に、任期後半に機器を 2 つ追加したが、Python コードを編集することなく対応することができました。</li>
+                        <li>依存関係を自動的に解決するバッチファイルを作成した。そもそも Python プログラムはビルド不要で動作するわけだが、「Python のインストール・バージョンの確認」「必要なパッケージの自動インストール (pip)」「マイコンとの通信の自動設定」等を行う単一のバッチファイルを作成し、本アプリケーションを動作させるコンピュータが変更しても指示に従うだけで運用可能にできるようにしました。</li>
+                    </ol>
+                    <h4>保守性の向上(ハードウェア)</h4>
+                    <p>ソフトウェアだけでなくハードウェアでも、自分が居なくなった後何年も使用できるように工夫しました。</p>
+                    <p>最初に作った制御装置部分は、Arduino Uno R3 と <a href="https://www.dfrobot.com/product-984.html?search=DFR0260">Arduino DMX Shield</a>を使用しました。Arduino Uno R3 は今後の入手性や初期開発の利便 (もともと Arduino には親しんでおり勝手知ったる)を考えての選択でしたが、これらには以下の問題がありました:</p>
+                    <ol>
+                        <li>Arduino Uno R3 は登場から 10年以上経ち、性能が陳腐化しているなか価格は高い。実際に今作では MCU の機能が不足しており、低速で安定性の低い SoftwareSerial を使用せざるをえなかった。</li>
+                        <li>開発の約 1 年後、Arduino は Arduino Uno R4 をリリースした。使用しているプログラムが R3 に搭載の MCU に依存しており、R4 で動作するかが分からない。公式 R3 は今後入手性が低くなることが予想されるし、互換ボードは正しい選択が難しい。</li>
+                        <li>Arduino DMX Shield は 入手性が不安定 (日本代理店では頻繁に品切れ状態になる)。さらに、Arduino Uno 以外のフォームファクタには使いにくい形状をしている。</li>
+                    </ol>
+                    <p>上記の問題を 対処/影響を軽減 するために、それぞれ以下のことを気をつけながら、回路やプログラムを再設計しました:</p>
+                    <ol>
+                        <li>Arduino の採用をやめ、Raspberry Pi Pico を採用した。Pico にはハードウェア UART が 2 系統あるし、そもそも PC との通信はネイティブ USB 1.1 を使用でき安定性が非常に高い。さらに、30倍以上の性能を持つが価格は 1/4 程度である。</li>
+                        <li>2024年、Raspberry Pi Pico 2 が発表されたが、直接メモリマップにアクセスせずに C++ でプログラムを書く限り Pico (1) と高い互換性がある。さらに、Pico (1) も未だ公式品の入手が容易である。</li>
+                        <li>DMX 信号生成部分も、既製品を使うのではなく、LTC485 (RS485 トランシーバ IC) を使用した回路を新たに起こして実装した。RS485 トランシーバ IC は今後しばらくは入手可能なことが予想される。</li>
+                    </ol>
+                </section>
+            </section>
+            <section id="template">
+                <h2>マイコンを使用した PC レス サウンドアート・グラフィックアート装置</h2>
+                <section>
+                    <h3>使用技術</h3>
+                    <ul>
+                        <li>C++ (Raspberry Pi Pico SDK、Arduino-Pico)</li>
+                        <li>MicroPython (Raspberry Pi Pico)</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>製作期間</h3>
+                    2025年8月～現在
+                </section>
+                <section>
+                    <h3>概要</h3>
+                    2025年9月26日、私はオーディオビジュアルイベント <a href="https://flow-fellow.net/events/vol8">「Flow vol.8」</a>に、グループ<a href="https://x.com/flow_fellow/status/1970458121857573032?s=20">SUBMIT</a>の<a href="https://ja.wikipedia.org/wiki/%E3%83%93%E3%83%87%E3%82%AA%E3%82%B8%E3%83%A7%E3%83%83%E3%82%AD%E3%83%BC">VJ</a> として出演しました。出演にあたり、音を生成/音楽を再生する装置と、映像を生成する装置を Raspberry Pi Pico を用いて作成し、それを用いてパフォーマンスを行いました。
+                </section>
+                <section>
+                    <h3>技術構成図</h3>
+                </section>
+                <section>
+                    <h3>頑張ったこと</h3>
+                    <h4>音の生成・映像の生成からプログラムで自作</h4>
+                    <p>本作では、「音楽をソフトウェアミキサに流して再生」「映像を Dx などの API に流す」だけでなく、「受け取った PCM データをどのようにアナログ音声として再生するか」「受け取った映像をどのように信号出力にするか」に関してもプログラムを記述しました。</p>
+                    <ul>
+                        <li>
+                            音では、ハードウェアへの出力には Arduino-Pico ボードに同梱されている PWMAudio ライブラリを使用し、ソフトウェアミキサ・音源の部分は C++ のコードを書いていちから実装しました。<br>
+                            また、音源で再生する音楽データは MIDI ファイルに格納しましたが、SD カードから MIDI ファイルを読み込み、再生する部分のプログラムも作成しました。MIDI ファイルのパーサーも自作しました。
+                        </li>
+                        <li>
+                            映像では、ハードウェアへの出力はライブラリを使用し、Pico の PWM 出力を用いて NTSC 映像信号を直接生成しました。マイコン上でどのような映像を表示するかは、映像表現あたり一個ずつ C++ のプログラムを記述しました。<br>
+                            また、映像生成ライブラリを改造して、「垂直同期信号を意図的に出力せず、画面を縦方向にバグらせる」「カラーバーストの周波数をわずかに変え、映像への着色をバグらせる」などのソフトウェア映像効果も実装し、パフォーマンスで使用しました。
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <section id="portfolio_itself">
+                <h2>ポートフォリオ(このWebページ)</h2>
+                <section>
+                    <h3>使用技術</h3>
+                    <ul>
+                        <li>HTML LS</li>
+                        <li>CSS4</li>
+                    </ul>
+                </section>
+                <section>
+                    <h3>製作期間</h3>
+                    2025年12月～現在
+                </section>
+                <section>
+                    <h3>概要</h3>
+                    <p>このWebページです。HTML と CSS を用いた静的 Web ページです。</p>
+                </section>
+                <section>
+                    <h3>頑張ったこと</h3>
+                    <h4>HTML LS、CSS4 への準拠</h4>
+                    <p>このページを作成した主たる動機は、就活に際して自分の製作物をまとめておく必要があると感じたからです。しかし、私にとっては、「最新の HTML 規格と CSS 規格を再勉強し、よりスマートな静的Webサイトを作成する」というもう一つの目的もあります。</p>
+                    <p>これまで私は、「ブラウザゲーがつくりたい！」「最新のフレームワークを勉強してみよう！」といったような動機からWebフロントエンド技術に触れ、その結果としてHTMLやCSSの知識は場当たり的に得てきました。ところが、最新の標準規格である「HTML LS」「CSS4」と自分の知識に乖離があり、きちんとした / そうあるべき Webページが書けていないことに気付きました。<br>
+                        アルバイトでもHTMLを書く機会があるため、このままでは良くないと、再度 HTML LS について勉強しようと思い、ひとつずつ MDN を参照しながら、どのように書くべきかを再学習していきました。</p>
+                    <p>本ページは、w3c の HTML validation テストを通過しています。</p>
+                </section>
+            </section>
+        </article>
+    </main>
+    <footer>
+        <div>(C)2025 nastty</div>
+    </footer>
 </body>
+
 </html>

@@ -1,0 +1,118 @@
+@charset "utf-8";
+
+html{
+    --color-bg: #eeeee8;
+    --color-bg-main: #fff;
+    --color-bg-info: #fee;
+    --color-border-info: #aaa;
+
+    --color-border-content: #ddd;
+    --color-bg-highlight: #ecd;
+    --color-accent: #cd8;
+
+    --color-footer-text: #444;
+}
+
+body{
+    background-color: var(--color-bg);
+    display: block;
+}
+
+body aside{
+    display: block;
+    background-color: var(--color-bg-info);
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0.5em;
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--color-border-info);
+    border-radius: 0.25em;
+}
+
+a:hover{
+    background-color: var(--color-bg-highlight);
+}
+
+main{
+    background-color: var(--color-bg-main);
+    padding: 1em 2em;
+    border: 1px solid;
+    border-color: var(--color-border-info);
+    border-radius: 0.375em;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    border-bottom: 1.5px solid;
+    border-color: var(--color-accent);
+}
+
+#portfolio>section{
+    border: 1px solid;
+    border-color: var(--color-border-content);
+    border-radius: 0.25em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 0.75em;
+    padding-top: 0em;
+}
+
+#portfolio>section>h2{
+    border-bottom: 1px solid;
+    border-color: var(--color-accent);
+    text-indent: 0.1em;
+}
+
+#portfolio>section h3{
+    text-decoration: underline dotted var(--color-accent) 2px;
+}
+
+footer{
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer>div{
+    color: var(--color-footer-text);
+}
+
+div.square-content{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+}
+div.square-content a{
+    display: block;
+    min-width: 100px;
+    max-width: 35%;
+    min-height: 100px;
+    width: 50%;
+    text-decoration: none;
+}
+
+
+div.square-content a figure figcaption{
+    display: block;
+}
+
+div.square-content a>figure img{
+    height: 100px;
+}
+div.square-content a>figure{
+    text-align: center;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
